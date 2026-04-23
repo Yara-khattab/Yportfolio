@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react";
+import yaraImg from '../assets/yara.jpg';
 const Hero=()=>{
   const statement="I strive to build clean, efficient, and user-friendly digital solutions that make a real impact.";
   const [displayedText,setDisplayedText]=useState("");
@@ -31,7 +32,7 @@ const Hero=()=>{
               solve complex problems and build high-performance, scalable web applications. {displayedText}</p>
       </div>
       <div className="">
-        <img src="/yara.jpg" alt="Yarakhattab" className="size-64 md:size-72 md:w-80 md:h-80 rounded-full border-4 border-cyan-400 object-cover shadow-2xl" />
+        <img src={yaraImg} alt="Yarakhattab" className="size-64 md:size-72 md:w-80 md:h-80 rounded-full border-4 border-cyan-400 object-cover shadow-2xl" />
       </div>
     </section>
   );
