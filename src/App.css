@@ -182,3 +182,20 @@
     border-right-color: var(--border);
   }
 }
+.skills-swiper .swiper-button-next,
+.skills-swiper .swiper-button-prev {
+  color: #94a3b8 !important;
+  background: none !important;
+  transition: all 0.3s ease;
+}
+.skills-swiper .swiper-button-disabled {
+  color: #212a36 !important;
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+.skills-swiper .swiper-button-next::after,
+.skills-swiper .swiper-button-prev::after {
+  font-size: 5px !important;
+  font-weight:bold;
+}
