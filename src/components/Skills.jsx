@@ -21,8 +21,7 @@ const Skills = () => {
     { name: "Problem Solving", percentage: 85 },
     { name: "PHP", percentage: 87 },
   ];
-  return (
-    <section id="skills" className="min-h-screen flex items-center justify-center bg-slate-900 py-10">
+  return ( <section id="skills" className="min-h-screen flex items-center justify-center bg-slate-900 py-8">
       <div className="bg-black/20 py-8 px-6 md:py-12 md:px-18 rounded-[25px] md:rounded-[35px] text-center shadow-2xl border border-slate-800 w-full max-w-xs md:max-w-4xl md:mt-16">
         <h1 className="text-cyan-500 text-2xl md:text-4xl font-bold mb-2">Skills</h1>
         <p className="text-md md:text-lg text-slate-500">You Can See My Skills Here</p>
@@ -36,8 +35,7 @@ const Skills = () => {
                     <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="7" className="text-slate-800" />
                     <circle   cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="7" 
                       strokeDasharray="251.2" strokeDashoffset={251.2 * (1 - skill.percentage / 100)} 
-                      strokeLinecap="round" className="text-cyan-500 transition-all duration-1000" />
-                  </svg>
+                      strokeLinecap="round" className="text-cyan-500 transition-all duration-1000" /> </svg>
                   <span className="absolute text-xl md:text-3xl font-medium text-white">{skill.percentage}%</span>
                 </div>
                 <p className="text-slate-200 font-medium text-md md:text-xl">{skill.name}</p>
@@ -49,5 +47,4 @@ const Skills = () => {
     </section>
   );
 };
-
 export default Skills;
