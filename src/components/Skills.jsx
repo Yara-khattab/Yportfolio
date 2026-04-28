@@ -21,7 +21,7 @@ const Skills = () => {
     { name: "Problem Solving", percentage: 85 },
     { name: "PHP", percentage: 87 },
   ];
-  return ( <section id="skills" className="min-h-screen flex items-center justify-center bg-slate-900 py-8">
+  return ( <section id="skills" className="min-h-screen flex items-center justify-center bg-slate-900 py-10">
       <div className="bg-black/20 py-8 px-6 md:py-12 md:px-18 rounded-[25px] md:rounded-[35px] text-center shadow-2xl border border-slate-800 w-full max-w-xs md:max-w-4xl md:mt-16">
         <h1 className="text-cyan-500 text-2xl md:text-4xl font-bold mb-2">Skills</h1>
         <p className="text-md md:text-lg text-slate-500">You Can See My Skills Here</p>
