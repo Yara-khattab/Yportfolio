@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 function App() {
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col items-center  text-white">
+    <div className="bg-slate-900 min-h-screen flex flex-col text-white ">
       <Navbar />
       <Hero />
       <Skills />

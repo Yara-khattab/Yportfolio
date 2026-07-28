@@ -1,40 +1,33 @@
-import { useEffect,useState } from "react";
+import React from 'react';
 import yaraImg from '../assets/yara.jpg';
-const Hero=()=>{
-  const statement="I strive to build clean, efficient, and user-friendly digital solutions that make a real impact.";
-  const [displayedText,setDisplayedText]=useState("");
-  const [isDeleting,setIsDeleting]=useState(false);
-  const [index,setIndex]=useState(0);
-  useEffect(() => {
-    const speed=isDeleting?30:40;
-    const timeout=setTimeout(() => {
-      if (!isDeleting&&index<statement.length) {
-        setDisplayedText((prev)=>prev+statement.charAt(index));
-        setIndex(index+1);
-      } else if (isDeleting&&index>0) {
-        setDisplayedText((prev)=>prev.slice(0,-1));
-        setIndex(index-1);
-      } else if (!isDeleting && index === statement.length) {
-        setTimeout(() => setIsDeleting(true), 1000);
-      } else if (isDeleting && index === 0) {
-        setIsDeleting(false);
-      }
-    }, speed);
-    return () => clearTimeout(timeout);
-  }, [index, isDeleting]);
+import {SiCodeforces, SiLeetcode} from 'react-icons/si';
+
+const Hero = () => {
   return (
-    <section id="about" className="flex flex-col md:flex-row items-center gap-10 lg:gap-28 px-10 py-32 bg-slate-900 min-h-screen text-white">
-      <div className="text-center md:text-left max-w-[500px]">
-        <h3 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm<span className="text-cyan-400">Yara Khattab</span></h3>
-        <p className="text-slate-400 text-md md:text-xl">I am a Computer Science student and a Front-End Developer with a logic-first mindset,
-             currently training as a Back-End Developer at SEF Academy. Beyond building interfaces, I leverage my Competitive Programming 
-             experience on <a href="" className="text-cyan-500">Codeforces</a>  and <a href="" className="text-cyan-500">LeetCode</a> to
-              solve complex problems and build high-performance, scalable web applications. {displayedText}</p>
-      </div>
-      <div className="">
-        <img src={yaraImg} alt="Yarakhattab" className="size-64 md:size-72 md:w-80 md:h-80 rounded-full border-4 border-cyan-400 object-cover shadow-2xl" />
+    <section id="about"
+    className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 bg-slate-900 min-h-screen text-white px-6 py-16 md:py-0">
+      <div className="text-center md:text-left max-w-[500px]  order-2 md:order-1">
+        <h6 className="text-cyan-400 text-lg md:text-xl font-bold tracking-wide mb-3">FULL-STACK DEVELOPER</h6>
+        <h3 className="text-4xl md:text-5xl font-semibold mb-4 font-heading">Hi, I'm <span className="text-cyan-400">Yara Khattab</span></h3>
+        <p className="text-slate-400 text-md md:text-xl leading-relaxed mb-8">
+          CS student building end-to-end web apps, from React interfaces to
+          back-end APIs, with a logic-first mindset from competitive programming.
+        </p>
+        <div className="flex items-center justify-center md:justify-start gap-3 mb-8">
+          <a href="#projects" className="bg-cyan-400 px-5 py-2.5 text-black font-semibold rounded-md text-sm">View work</a>
+          <a href="" className="px-5 py-2.5 font-semibold rounded-md border border-slate-700 text-sm">Resume</a>
+        </div>
+      </div>   <div className="flex flex-col items-center  order-1 md:order-2">
+        <img src={yaraImg}  alt="Yara Khattab" className="size-64 md:size-72 rounded-full border-4 border-cyan-400 object-cover shadow-2xl mb-4"/>
+        <div className="flex items-center gap-3">
+       <a href="https://codeforces.com/profile/Yarakhattab4" target="_blank"  className="w-9 h-9 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400 hover:border-cyan-400 transition-all duration-300">
+      <SiCodeforces size={16} /></a>
+      <a href="https://leetcode.com/u/Yara-khattab/" target="_blank" className="w-9 h-9 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400 hover:border-cyan-400 transition-all duration-300">
+       <SiLeetcode size={16} /></a>
+       </div>
       </div>
     </section>
   );
 };
+
 export default Hero;

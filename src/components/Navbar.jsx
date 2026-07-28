@@ -16,9 +16,9 @@ const Navbar = () => {
           <li className="hover:text-cyan-400 transition"><a href="#certificates">Certificates</a></li>
           <li className="hover:text-cyan-400 transition"><a href="#contact">Contact</a></li>
           <li><ul className="flex gap-4">
-            <li className="hover:text-cyan-600 transition border border-cyan-400 size-9 flex justify-center items-center rounded-full"><a href="#"><i className="fa-brands fa-github"></i></a></li>
-            <li className="hover:text-cyan-600 transition border border-cyan-400 size-9 flex justify-center items-center rounded-full"><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
-            <li className="hover:text-cyan-600 transition border border-cyan-400 size-9 flex justify-center items-center rounded-full"><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
+            <li className="hover:text-cyan-600 transition border border-cyan-400 size-9 flex justify-center items-center rounded-full cusrsor-pointer"><a href="https://github.com/Yara-khattab"><i className="fa-brands fa-github"></i></a></li>
+            <li className="hover:text-cyan-600 transition border border-cyan-400 size-9 flex justify-center items-center rounded-full cusrsor-pointer"><a href="https://www.facebook.com/yara.khattab.261523"><i className="fa-brands fa-facebook-f"></i></a></li>
+            <li className="hover:text-cyan-600 transition border border-cyan-400 size-9 flex justify-center items-center rounded-full cusrsor-pointer"><a href="https://www.linkedin.com/in/yara-khattab-8a415a33b/"><i className="fa-brands fa-linkedin-in"></i></a></li>
           </ul></li>
         </ul>
       </div>
