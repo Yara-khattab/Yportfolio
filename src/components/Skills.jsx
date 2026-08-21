@@ -54,7 +54,8 @@ const BREAKPOINTS = [
   { minWidth: 1024, items: 5 },
   { minWidth: 768, items: 4 },
   { minWidth: 640, items: 3 },
-  { minWidth: 0, items: 2 },
+  { minWidth: 400, items: 2 },
+  { minWidth: 0, items: 1 }
 ];
 
 function useItemsPerPage() {
@@ -120,7 +121,7 @@ const SkillRow = ({ title, skills }) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen bg-slate-900 py-20 px-6 md:px-10">
+    <section id="skills" className="min-h-screen bg-slate-900 py-5 px-6 md:px-10">
       <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-white mb-1">
           MY <span className="text-cyan-400">TOOLKIT</span>

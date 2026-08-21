@@ -5,4 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/Yportfolio/",
   define: { "global": "window", },
+   server: {
+    host: true,
+  }
 })
