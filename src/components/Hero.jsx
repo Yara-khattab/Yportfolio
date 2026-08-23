@@ -5,7 +5,7 @@ import {SiCodeforces, SiLeetcode} from 'react-icons/si';
 const Hero = () => {
   return (
     <section id="about"
-    className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 bg-slate-900 min-h-screen text-white px-6 py-20 md:py-0">
+    className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 bg-slate-900 min-h-screen text-white py-20 md:py-0">
       <div className="text-center md:text-left max-w-[500px]  order-2 md:order-1">
         <h6 className="text-cyan-400 text-lg md:text-xl font-bold tracking-wide mb-3">FULL-STACK DEVELOPER</h6>
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 font-heading">Hi, I'm <span className="text-cyan-400">Yara Khattab</span></h3>

@@ -24,7 +24,7 @@ const ProjectCard = ({ project, activeCategory }) => {
     );
   };
   return (
-  <div className="border border-slate-800 rounded-2xl overflow-hidden bg-slate-800/40 flex flex-col h-full">
+  <div className="border border-slate-800 rounded-2xl overflow-hidden bg-slate-800/40 flex flex-col h-full transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:shadow-cyan-500/10 hover:border-slate-700">
     <div className="h-32 sm:h-36 md:h-40 lg:h-48 bg-gradient-to-br from-slate-800 to-slate-900 border-b border-slate-800 relative flex items-center justify-center shrink-0">
      {renderImageContent()}
      <span className="absolute top-2.5 right-2.5 bg-slate-900/85 border text-[9px] px-2 py-1 rounded-full flex items-center gap-1 border-cyan-400 text-cyan-400">

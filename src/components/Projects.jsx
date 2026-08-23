@@ -37,7 +37,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="min-h-screen bg-slate-900 py-5 px-6 md:px-10">
-      <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto">
+      <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-white mb-6">
           My <span className="text-cyan-400">Projects</span>
         </h1>
@@ -67,7 +67,7 @@ const Projects = () => {
           </p>
         )}
 
-        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${activeCategory === "Overview" ? "mt-4" : ""}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-5 ${activeCategory === "Overview" ? "mt-4" : ""}`}>
           {filteredProjects.map((project) => (
             <ProjectCard key={project.title} project={project} activeCategory={activeCategory} />
           ))}

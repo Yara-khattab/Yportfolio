@@ -76,12 +76,16 @@ function useItemsPerPage() {
 const SkillItem = ({ skill }) => {
   const Icon = skill.icon;
   return (
-    <div className="flex flex-col items-center justify-center min-w-[120px]">
+    <div className="flex flex-col items-center justify-center min-w-[120px] group cursor-pointer">
       <span className="flex items-center justify-center gap-1.5 text-[14px] text-white whitespace-normal mb-1 w-full h-10 text-center">
-        <Icon className="text-cyan-400 text-base shrink-0" />
-        <span className="text-center leading-tight whitespace-normal">{skill.name}</span></span>
+        <Icon className="text-cyan-400 text-base shrink-0 transition-transform duration-300 group-hover:scale-125" />
+        <span className="text-center leading-tight whitespace-normal transition-colors duration-300 group-hover:text-cyan-300">{skill.name}</span>
+      </span>
       <div className="h-[5px] bg-slate-800 rounded-full overflow-hidden w-full mx-auto">
-      <div className="h-full bg-cyan-400 rounded-full" style={{ width: `${skill.level}%` }}/>
+        <div
+          className="h-full bg-cyan-400 rounded-full transition-all duration-300 group-hover:shadow-[0_0_8px_rgba(34,211,238,0.6)]"
+          style={{ width: `${skill.level}%` }}
+        />
       </div>
     </div>
   );
@@ -122,7 +126,7 @@ const SkillRow = ({ title, skills }) => {
 const Skills = () => {
   return (
     <section id="skills" className="min-h-screen bg-slate-900 py-5 px-6 md:px-10">
-      <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto">
+      <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-white mb-1">
           MY <span className="text-cyan-400">TOOLKIT</span>
         </h1>
