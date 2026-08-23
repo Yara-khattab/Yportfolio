@@ -42,12 +42,12 @@ const Projects = () => {
           My <span className="text-cyan-400">Projects</span>
         </h1>
 
-        <div className="flex gap-5 border-b border-slate-800 mb-2 flex-wrap">
+        <div className="flex gap-5 border-b border-slate-800 mb-3 flex-wrap">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`flex items-center gap-1.5 pb-3 lg:text-md text-sm transition-colors ${
+              className={`flex items-center gap-1.5 pb-3 lg:text-[15px] text-sm transition-colors ${
                 activeCategory === cat
                   ? "text-cyan-400 font-bold border-b-2 border-cyan-400"
                   : "text-slate-400 hover:text-white"
@@ -62,8 +62,8 @@ const Projects = () => {
         </div>
 
         {activeCategory === "Overview" && (
-          <p className="text-slate-500 lg:text-[14px] text-xs mb-2">
-            A quick look at my strongest work — browse by category above for everything else.
+          <p className="text-slate-500 lg:text-[15px] text-xs mb-2">
+            A quick look at my strongest work .
           </p>
         )}
 

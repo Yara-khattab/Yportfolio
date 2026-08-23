@@ -44,7 +44,7 @@ const Certificates = () => {
           My <span className="text-cyan-400">Certificates</span>
         </h1>
 
-        <div className="flex gap-4 border-b border-slate-800 mb-2 flex-wrap">
+        <div className="flex gap-4 border-b border-slate-800 mb-3 flex-wrap">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -57,7 +57,7 @@ const Certificates = () => {
             >
               {cat}
               {cat !== "Overview" && (
-                <span className="text-[11px] lg:text-[14px]">({counts[cat]})</span>
+                <span className="text-[12px] lg:text-[14px]">({counts[cat]})</span>
               )}
             </button>
           ))}

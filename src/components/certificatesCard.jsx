@@ -19,7 +19,7 @@ const CertificateCard = ({ cert }) => {
         className="w-full h-full object-cover absolute inset-0"
         onError={(e) => { e.target.style.display = "none"; }}
       />
-        <span className="absolute top-2 right-2 bg-slate-900/85 border border-cyan-400 text-cyan-400 text-[8px] px-2 py-0.5 rounded-full z-10">
+        <span className="absolute top-2 right-2 bg-slate-900/85 border border-cyan-400 text-cyan-400 lg:text-[10px] text-[8px] px-2 py-0.5 rounded-full z-10">
           {categoryBadgeMap[cert.category] || cert.category}
         </span>
       </div>

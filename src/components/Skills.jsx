@@ -131,7 +131,7 @@ const Skills = () => {
           MY <span className="text-cyan-400">TOOLKIT</span>
         </h1>
         <p className="text-slate-400 text-sm mb-4">Technologies and tools I work with</p>
-        <div className="h-px bg-slate-800 mb-8" />
+        <div className="h-px bg-slate-800 mb-5" />
 
         <div className="flex flex-col gap-3">
           {skillCategories.map((category, idx) => (

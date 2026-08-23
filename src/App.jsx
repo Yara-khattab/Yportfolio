@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Certificates from "./components/Certificates"; 
 function App() {
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col text-white ">
+    <div className="bg-slate-900 flex flex-col gap-20 text-white ">
       <Navbar />
       <Hero />
       <Skills />
