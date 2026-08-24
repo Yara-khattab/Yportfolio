@@ -3,7 +3,7 @@ import { useState } from "react";
 const contactInfo = [
   {
     label: "Email",
-    value: "yara.khattab@gmail.com",
+    value: "khatttabyara@gmail.com",
     icon: "fa-solid fa-envelope",
     copyable: true,
   },
