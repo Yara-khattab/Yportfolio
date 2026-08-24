@@ -56,7 +56,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `${formData.message}\n\n— ${formData.name} (${formData.email})`
     );
-    window.location.href = `mailto:khatttabyara@email.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:khatttabyara@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
