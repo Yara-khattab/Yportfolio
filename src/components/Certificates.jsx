@@ -38,7 +38,7 @@ const Certificates = () => {
   }, [activeCategory, featuredCertificates]);
 
   return (
-    <section id="certificates" className="min-h-screen bg-slate-900 py-5 px-6 md:px-10">
+    <section id="certificates" className=" bg-slate-900 py-5 px-6 md:px-10">
       <div className="w-full max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-white mb-6">
           My <span className="text-cyan-400">Certificates</span>

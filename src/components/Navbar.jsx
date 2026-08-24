@@ -16,12 +16,8 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
+  useEffect(() => { document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = "";};
   }, [isOpen]);
 
   return (

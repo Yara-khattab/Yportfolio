@@ -64,6 +64,8 @@ const certificates = [
     title: "ECPC 2025 Qualifiers",
     source: "ICPC",
     category: "Competitive Programming",
+    featured: true,
+    featuredOrder: 4,
     image: ECPC2025Img,
     url: "https://drive.google.com/file/d/1-e9jSOXnGG6pUFWoSV3BRv9fvZP2ZoN9/view?usp=drive_link",
   },
